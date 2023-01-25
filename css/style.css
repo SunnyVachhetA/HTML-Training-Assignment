@@ -1,0 +1,108 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+}
+.hero-image
+{
+    /* height: auto;
+    max-width: 80%; */
+    width: 536px;
+    height: 536px;
+    border: 20px solid white;
+    border-radius: 50%;   
+}
+.h-custom
+{
+    height: calc(100% -73px);
+}
+
+.logo-header
+{
+    width: 270px;
+    height: 56px;
+    margin-top: 30px;
+}
+
+.lead-text
+{
+    font-size: 40px; 
+    /* 30px */
+    font-weight: 300;
+    color: #3E3E3E;
+}
+
+.mark-text
+{
+    font-weight: 900;
+    color: #C8242F;
+}
+
+.action-message
+{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.custom-input
+{
+    width: 429px;
+    height: 49px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+}
+
+.login-option
+{
+    margin-top: 31px;
+    max-width: 429px;
+    height: auto;
+}
+.btn-login
+{
+    background-color:#C8242F;
+    font-weight: 400;
+    font-size: 18px;
+    width: 138px;
+    height: 45px;
+    border:none;
+    border-radius: 23px;
+}
+
+.que-action
+{
+    font-weight: 400px;
+    font-size: 15px;
+    color: #ADADAD;
+}
+
+.action-register
+{
+    font-weight: 400px;
+    font-size: 15px;
+    color: #C8242F;
+}
+
+/* DashBoard CSS */
+
+.navbar
+{
+    background-color:#FFFFFF;
+    height: 80px;
+}
+
+/* Dash CSS Complete*/
+
+@media screen and (max-width: 480px){
+    .hero-image
+    {
+        max-width: 80%;
+        border: 5px solid white;
+    }
+}
