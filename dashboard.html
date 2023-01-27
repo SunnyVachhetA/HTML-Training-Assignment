@@ -14,123 +14,269 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-md navbar-light" role="navigation">
         <div class="container-fluid">
             <div class="navbar-brand">
-                <img src="./images/menu-bar.svg" class = "mx-2" alt="Menu Bar">
+                <img src="./images/menu-bar.svg" class="mx-2" alt="Menu Bar" id="menu-bar">
                 <a href="#">
-                    <img src="./images/header-logo.svg" class = "nav-brand-header" alt="Company Logo">
+                    <img src="./images/header-logo.svg" class="nav-brand-header" alt="Company Logo">
                 </a>
             </div>
 
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-5 me-auto">
-                    <li>
+
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-5 d-sm-none me-auto">
+                    <li class="nav-item">
                         <div class="input-group">
                             <img src="./images/search-icon.svg" class="form-control icon-search" alt="Search Icon">
                             <input type="text" id="search" class="text-search" placeholder="Search">
                         </div>
                     </li>
                 </ul>
-                <div class="container d-flex align-items-center justify-content-end">
-                    <img src="./images/notification-icon.svg" class = "d-inline" alt="Notifications">                    
-                    <div class = "mx-5">
-                            <img src="./images/profile.png" alt="Profile Picture">
-                            <span>John Doe</span>
-                            <img src="./images/downward-arrow.svg" alt="Select">
+                <div class="container-fluid d-flex align-items-center justify-content-end">
+                    <img src="./images/notification-icon.svg" class="d-sm-none d-md-inline" alt="Notifications">
+                    <div class="mx-5">
+                        <img src="./images/profile.png" alt="Profile Picture">
+                        <span>John Doe</span>
+                        <img src="./images/downward-arrow.svg" alt="Select">
                     </div>
                 </div>
             </div>
+
+            <img src="./images/profile.png" alt="Profile Picture" class="d-md-none">
         </div>
     </nav>
 
-    <aside class = "flex-shrink-0 p-1 bg-white">
-        <div class="position-sticky">
-            <div class="list-group list-group-flush">
-                <div class="d-flex align-items-center mx-4 my-2 p-2 sidebar-item-active">
-                    <a
-                        href="#"
-                        class="sidebar-link"
-                    >
-                        
-                        <img src="./images/dashboard-active.svg" class = "sidebar-icon" alt="Dashboard">
-                        <span class = "mx-1">Dashboard</span>
-                    </a>
+    <main class="d-flex">
+        <aside id="sidebarMenu" class="flex-shrink-0 p-1">
+            <div class="position-sticky">
+                <div class="list-group list-group-flush">
+                    <div class="d-flex align-items-center mx-4 my-2 p-2 sidebar-item-active">
+                        <a href="#" class="sidebar-link">
+
+                            <img src="./images/dashboard-active.svg" class="sidebar-icon" alt="Dashboard">
+                            <span class="mx-1">Dashboard</span>
+                        </a>
+                    </div>
+
+                    <div class="d-flex align-items-center mx-4 my-2 p-2">
+                        <a href="#" class="sidebar-link">
+
+                            <img src="./images/graph-default.svg" class="sidebar-icon" alt="Dashboard">
+                            <span class="mx-1">Analysis</span>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center mx-4 my-2 p-2">
+                        <a href="#" class="sidebar-link">
+
+                            <img src="./images/inbox-default.svg" class="sidebar-icon" alt="Dashboard">
+                            <span class="mx-1">Inbox</span>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center mx-4 my-2 p-2">
+                        <a href="#" class="sidebar-link">
+
+                            <img src="./images/clock-default.svg" class="sidebar-icon" alt="Dashboard">
+                            <span class="mx-1">History</span>
+                        </a>
+                    </div>
+
+                    <div class="d-flex align-items-center mx-4 my-2 p-2">
+                        <a href="#" class="sidebar-link">
+
+                            <img src="./images/user-default.svg" class="sidebar-icon" alt="Dashboard">
+                            <span class="mx-1">Users</span>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center mx-4 my-2 p-2">
+                        <a href="#" class="sidebar-link">
+
+                            <img src="./images/maintenance-default.svg" class="sidebar-icon" alt="Dashboard">
+                            <span class="mx-1">Maintenance</span>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center mx-4 my-2 p-2">
+                        <a href="#" class="sidebar-link">
+                            <img src="./images/setting-default.svg" class="sidebar-icon" alt="Dashboard">
+                            <span class="mx-1">Setting</span>
+                        </a>
+                    </div>
                 </div>
-                
-                <div class="d-flex align-items-center mx-4 my-2 p-2">
-                    <a
-                        href="#"
-                        class="sidebar-link"
-                    >
-                        
-                        <img src="./images/graph-default.svg" class = "sidebar-icon" alt="Dashboard">
-                        <span class = "mx-1">Analysis</span>
-                    </a>
-                </div>
-
-
-                <div class="d-flex align-items-center mx-4 my-2 p-2">
-                    <a
-                        href="#"
-                        class="sidebar-link"
-                    >
-                        
-                        <img src="./images/inbox-default.svg" class = "sidebar-icon" alt="Dashboard">
-                        <span class = "mx-1">Inbox</span>
-                    </a>
-                </div>
-
-
-                <div class="d-flex align-items-center mx-4 my-2 p-2">
-                    <a
-                        href="#"
-                        class="sidebar-link"
-                    >
-                        
-                        <img src="./images/clock-default.svg" class = "sidebar-icon" alt="Dashboard">
-                        <span class = "mx-1">History</span>
-                    </a>
-                </div>
-                
-
-                <div class="d-flex align-items-center mx-4 my-2 p-2">
-                    <a
-                        href="#"
-                        class="sidebar-link"
-                    >
-                        
-                        <img src="./images/user-default.svg" class = "sidebar-icon" alt="Dashboard">
-                        <span class = "mx-1">Users</span>
-                    </a>
-                </div>
-
-                <div class="d-flex align-items-center mx-4 my-2 p-2">
-                    <a
-                        href="#"
-                        class="sidebar-link"
-                    >
-                        
-                        <img src="./images/maintenance-default.svg" class = "sidebar-icon" alt="Dashboard">
-                        <span class = "mx-1">Maintenance</span>
-                    </a>
-                </div>
-
-                <div class="d-flex align-items-center mx-4 my-2 p-2">
-                    <a
-                        href="#"
-                        class="sidebar-link"
-                    >
-                        
-                        <img src="./images/setting-default.svg" class = "sidebar-icon" alt="Dashboard">
-                        <span class = "mx-1">Setting</span>
-                    </a>
-                </div>
-
             </div>
+        </aside>
+
+        <div class="w-100 p-md-5 p-3 bg-light">
+            <h1 class="dashboard-active-title">Dashboard</h1>
+
+            <div class="container-fluid">
+                <div class="row gap-2">
+
+                    <div class="col bg-primary d-flex align-items-center justify-content-evenly bg-white">
+                        <!-- <div> -->
+                        <img src="./images/star.svg" class="card-icon mt-4 ms-2 mb-4" alt="Star Icon">
+                        <!-- </div> -->
+
+                        <div>
+                            <span class="h5">23,456</span><br>
+                            <span class="card-info">New Products</span>
+                        </div>
+                    </div>
+
+                    <div class="col bg-primary d-flex align-items-center justify-content-evenly bg-white">
+
+                        <img src="./images/new-product.svg" class="card-icon mt-4 ms-2 mb-4" alt="Add Products">
+
+
+                        <div>
+                            <span class="h4">2345</span><br>
+                            <span>Added Products</span>
+                        </div>
+                    </div>
+
+
+                    <div class="col bg-primary d-flex align-items-center justify-content-evenly bg-white">
+                        <div>
+                            <img src="./images/total-product.svg" class="card-icon mt-4 ms-2 mb-4" alt="Total">
+                        </div>
+
+                        <div>
+                            <span class="h4">32,456</span><br>
+                            <span>Total Products</span>
+                        </div>
+                    </div>
+
+                    <div class="col bg-primary d-flex align-items-center justify-content-evenly bg-white">
+                        <div>
+                            <img src="./images/dollar-filled.svg" class="card-icon mt-4 ms-2 mb-4" alt="Currency">
+                        </div>
+
+                        <div>
+                            <span class="h4">5678</span><br>
+                            <span>Today's Sale</span>
+                        </div>
+                    </div>
+
+                    <div class="col bg-primary d-flex align-items-center justify-content-evenly bg-white">
+                        <div>
+                            <img src="./images/dollar-filled.svg" class="card-icon mt-4 ms-2 mb-4" alt="Currency">
+                        </div>
+
+                        <div>
+                            <span class="h4">33,5342</span><br>
+                            <span>Total Sale</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Graphical Infomration -->
+            <section class="bg-light mt-4 d-flex gap-3">
+                <div class="data-graph bg-white p-4">
+                    <div class="container d-flex justify-content-between">
+                        <div class="data-graph-title">Sale</div>
+                        <div class="d-flex gap-2 parameter-text">
+                            <div>Weekly</div>
+                            <div>Monthly</div>
+                            <div class="active-graph-parameter">Yearly</div>
+                        </div>
+                    </div>
+                    <img src="./images/data-graph.png" class="" alt="Graph">
+                </div>
+
+                <!-- pie -->
+
+                <div class="bg-white p-4">
+                    <div class="">Sales by Country</div>
+                    <img src="./images/pie-chart.svg" alt="Pie Chart">
+                    <!-- List goes here -->
+                </div>
+            </section>
+
+            <!-- Table -->
+            <section class="bg-white p-4 mt-4">
+                <div class="container-fluid">
+                    <span class="data-graph-title">
+                        Invoices
+                    </span>
+                    <a href="#" class="view-table f-right">View All</a>
+                </div>
+                <div class="">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope = "col">Invoice</th>
+                                <th scope = "col">Company Name</th>
+                                <th scope = "col">Email</th>
+                                <th scope = "col">Due Date</th>
+                                <th scope = "col">Status</th>
+                                <th scope = "col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>651535</td>
+                                <td>Public Adjusting Firm</td>
+                                <td>georgia.young@emaple.com</td>
+                                <td>24 May, 2020</td>
+                                <td ><span class = "success-paid">Paid</span></td>
+                                <td>$47,800</td>
+                            </tr>
+
+                            <tr>
+                                <td>558612</td>
+                                <td>Other</td>
+                                <td>jessica.hanson@emaple.com</td>
+                                <td>24 May, 2020</td>
+                                <td ><span class = "success-paid">Paid</span></td>
+                                <td>$98,000</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>558612</td>
+                                <td>Vendor</td>
+                                <td>alma.lawson@emaple.com</td>
+                                <td>8 Sept, 2020</td>
+                                <td ><span class = "failed-paid">Failed</span></td>
+                                <td>$20,900</td>
+                            </tr>
+                            <tr>
+                                <td>558612</td>
+                                <td>Property Management Company</td>
+                                <td>kenzi.lawson@emaple.com</td>
+                                <td>22 Oct, 2020</td>
+                                <td ><span class = "success-paid">Paid</span></td>
+                                <td>$10,570</td>
+                            </tr>
+
+                            <tr>
+                                <td>651535</td>
+                                <td>Subcontractor Company</td>
+                                <td>jackson.graham@emaple.com</td>
+                                <td>1 Feb, 2020</td>
+                                <td ><span class = "payment-pending">Pending</span></td>
+                                <td>$10,200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </section>
+
         </div>
-    </aside>
+    </main>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/custom.js"></script>
 </body>
 
 </html>
+
+
+
+<!--             
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->

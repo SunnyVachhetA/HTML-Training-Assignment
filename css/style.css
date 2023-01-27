@@ -11,6 +11,9 @@
 a{
     text-decoration: none;
 }
+img{
+    max-width: 100%;
+}
 .hero-image
 {
     /* height: auto;
@@ -99,7 +102,7 @@ a{
 .navbar
 {
     background-color:#FFFFFF;
-    width: 100vw;
+    /* width: 100vw; */
     height: 80px;
 }
 
@@ -129,6 +132,7 @@ aside
     height: 80vh;   
     font-size: 16px;
     font-weight: 400px;
+    /* transform: translateX( -242px); */
 }
 
 .sidebar-icon
@@ -147,11 +151,116 @@ aside
 .sidebar-item-active
 {
     background-color: #FFF3F4;
+    border-radius: 5px;
 }
 
 .sidebar-item-active .sidebar-link>span
 {
     color: #C8242F;
+}
+
+.show-sidebar
+{
+    /* transform: translateX(0); */
+    width: min(242px, 100%);
+    display: none;
+}
+
+.card-custom
+{
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+.card-icon
+{
+    width: 30px;
+    height: 30px;
+}
+
+.card-info
+{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.data-graph
+{
+    width: min(802px, 90%);
+    height: min(450px, 100%);
+}
+
+.data-graph-title
+{
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.parameter-text
+{
+    font-weight: 400px;
+    font-size: 12px;
+}
+.active-graph-parameter
+{
+    border-bottom: 1px solid;
+    border-color: #C8242F;
+    color: #C8242F;;
+}
+
+.view-table
+{
+    color: #C8242F;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.f-right
+{
+    float: right;
+}
+
+.table>thead>tr>th
+{
+    font-weight: 400;
+    font-size: 15px;
+    color: #ADADAD;
+    text-transform: uppercase;
+}
+
+.table>thead>tr>td
+{
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    color: #3E3E3E;
+}
+
+.success-paid
+{
+    padding: 5px;
+    font-size: 15px;
+    background-color: #EBFFEF;
+    border-radius: 5px;
+    color: #3CDD5F;
+}
+
+.failed-paid
+{
+    padding: 5px;
+    font-size: 15px;
+    background-color: #FFF5F5;
+    border-radius: 5px;
+    color: #FF4545; 
+}
+
+.payment-pending
+{
+    padding: 5px;
+    font-size: 15px;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    color: #BABABA; 
 }
 /* Dashboard CSS Complete*/
 
@@ -162,3 +271,35 @@ aside
         border: 5px solid white;
     }
 }
+
+.dashboard-active-title
+{
+    font-weight: 500px;
+    font-size: 30px;    
+}
+
+/*
+    Media Queries for dashboard
+*/
+
+@media screen and (max-width: 790px){
+    .nav-profile-picture
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    aside
+    {
+        width: 70%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .sidebar-item-active
+    {
+        width: 80%;
+    }
+}
+
+/* Dashboard media done */
