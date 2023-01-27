@@ -208,6 +208,39 @@ aside
     color: #C8242F;;
 }
 
+
+.red-circle
+{
+    background-color: #C8242F;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+}
+
+.yellow-circle
+{
+    background-color: #EBC844;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+}
+
+.orange-circle
+{
+    background-color: #F16C20;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+}
+
+.green-circle
+{
+    background-color:#A2B86C;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+}
+
 .view-table
 {
     color: #C8242F;
