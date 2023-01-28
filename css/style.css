@@ -279,18 +279,18 @@ aside
     color: #3E3E3E;
 }
 
-.success-paid
+.payment-success
 {
-    padding: 5px;
+    padding: 4px 10px;
     font-size: 15px;
     background-color: #EBFFEF;
     border-radius: 5px;
     color: #3CDD5F;
 }
 
-.failed-paid
+.payment-failed
 {
-    padding: 5px;
+    padding: 4px 10px;
     font-size: 15px;
     background-color: #FFF5F5;
     border-radius: 5px;
@@ -299,11 +299,16 @@ aside
 
 .payment-pending
 {
-    padding: 5px;
+    padding: 4px 10px;
     font-size: 15px;
     background-color: #F8F8F8;
     border-radius: 5px;
     color: #BABABA; 
+}
+
+#sidebarMenu
+{
+    z-index: -1;
 }
 /* Dashboard CSS Complete*/
 
