@@ -186,8 +186,8 @@ aside
 
 .data-graph
 {
-    width: min(802px, 90%);
-    height: min(450px, 100%);
+    width: 802px;
+    height: 400px;
 }
 
 .data-graph-title
@@ -208,6 +208,11 @@ aside
     color: #C8242F;;
 }
 
+.pie-chart
+{
+    height: 398px;
+    width: 385px;
+}
 
 .red-circle
 {
@@ -251,6 +256,11 @@ aside
 .f-right
 {
     float: right;
+}
+
+.f-left
+{
+    float: left;
 }
 
 .table>thead>tr>th
@@ -311,6 +321,11 @@ aside
     font-size: 30px;    
 }
 
+.pie-text
+{
+    font-size: 15px;
+    font-weight: 400;
+}
 /*
     Media Queries for dashboard
 */
