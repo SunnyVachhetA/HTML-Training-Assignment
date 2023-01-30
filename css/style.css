@@ -18,8 +18,9 @@ img{
 {
     /* height: auto;
     max-width: 80%; */
-    width: 536px;
-    height: 536px;
+    /* max-width: 100%;
+    /* width: 536px;    */
+    /* height: 100%; */
     border: 20px solid white;
     border-radius: 50%;   
 }
@@ -97,6 +98,38 @@ img{
     color: #C8242F;
 }
 
+/*
+    Media Query for Index page
+*/
+
+
+@media (min-width:360px) and (max-width:720px) {
+    .hero-image-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-image
+    {
+        margin: auto;
+        width: 80%;
+        height: 80%;
+        border-radius: 5px solid white;
+    }
+
+    .logo-header
+    {
+        margin-left: 0;
+        width: 70%;
+        height: 50%;
+    }
+}
+
+
+/*  Index Page Complete */
+
+
 /* DashBoard CSS */
 
 .navbar
@@ -112,11 +145,10 @@ img{
     width: 18px;
 }
 
-.input-group > .icon-search
+.search-icon
 {
-    max-width: 14%;
-    max-height: 14%;
-    border: none;
+    height: 20px;
+    width: 20px;
 }
 
 .input-group > .text-search
@@ -128,8 +160,7 @@ img{
 
 aside
 {
-    width: min(242px, 100%);
-    height: 80vh;   
+    width: min(242px, 100%);   
     font-size: 16px;
     font-weight: 400px;
     /* transform: translateX( -242px); */
@@ -306,10 +337,6 @@ aside
     color: #BABABA; 
 }
 
-#sidebarMenu
-{
-    z-index: -1;
-}
 /* Dashboard CSS Complete*/
 
 @media screen and (max-width: 480px){
@@ -338,8 +365,8 @@ aside
 @media screen and (max-width: 790px){
     .nav-profile-picture
     {
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
     }
 
     aside
