@@ -6,225 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <title>Document</title>
-    <style>
-        .text-muted
-        {
-            color: #ADADAD;
-            font-size: 12px;
-            font-weight: 400;
-        }
-        .invalid-text
-        {
-            color: #FF3B3B;
-            font-weight: 400;
-            font-size: 12px;
-        }
-        a {
-            text-decoration: none;
-        }
-
-        .navbar {
-            height: 80px;
-        }
-
-        .search-icon {
-            height: 20px;
-            width: 20px;
-        }
-
-        aside {
-            position: relative;
-            /* position: sticky; */
-            width: 242px;
-        }
-
-        .hide-aside {
-            display: none;
-        }
-
-        .menu-icon {
-            height: 15px;
-            width: 15px;
-        }
-
-        .menu-text-active {
-            font-size: 15px;
-        }
-
-        .menu-item-active {
-            height: 43px;
-            width: 183px;
-            background-color: #FFF3F4;
-            border-radius: 5px;
-        }
-
-        .menu-item {
-            height: 43px;
-            width: 183px;
-            background-color: white;
-        }
-
-        .dashboard-title {
-            font-size: 30px;
-        }
-
-        .form-style-title {
-            font-size: 22px;
-            color: #3E3E3E;
-            font-weight: 500;
-        }
-
-        .main-content {
-            position: sticky;
-        }
-
-        .border-dash {
-            border-style: dashed;
-        }
-
-        .is-invalid {
-            background: none !important;
-        }
-
-        .form-control {
-            border: 1px solid #ADADAD;
-        }
-
-        .form-style-subtitle {
-            font-weight: 500;
-            font-size: 18px;
-            color: #3E3E3E;
-        }
-
-        .form-upload-button {
-            background: white;
-            padding: 5px 20px;
-            color: #C8242F;
-            border: 1px solid #C8242F;
-            border-radius: 18px;
-            font-size: 15px;
-            text-align: center;
-        }
-
-        .form-upload-button:hover {
-            border: 2px solid red;
-        }
-
-        .form-upload-button img:hover {
-            top: -2;
-        }
-
-        .form-check-input:checked {
-            background-color: #C8242F;
-            border: 2px solid #C8242F;
-        }
-
-        .form-check-label {
-            font-size: 15px;
-            font-weight: 400;
-        }
-
-        .form-check-input:disabled {
-            background-color: #ADADAD;
-            border: 1px solid #ADADAD;
-        }
-
-        .snack-icon {
-            height: 20px;
-            width: 20px;
-        }
-
-        .snack-error {
-            color: #FF3535;
-            border-radius: 5px;
-            border: 1px solid #FF3535;
-        }
-
-        .snack-information {
-            border-radius: 5px;
-            border: 1px solid #00B9E1;
-            color: #00B9E1;
-        }
-
-        .snack-warning {
-            border-radius: 5px;
-            border: 1px solid #FFA800;
-            color: #FFA800;
-        }
-
-        .snack-success {
-            border-radius: 5px;
-            border: 1px solid #00AF27;
-            color: #00AF27;
-        }
-
-        .form-control,
-        .form-select,
-        .form-control::placeholder {
-            color: #ADADAD;
-        }
-
-        .btn-primary-custom,
-        .btn-secondary-custom {
-            border-radius: 23px;
-            width: 124px;
-            height: 45px;
-            border: none;
-            font-size: 18px;
-            font-weight: 500;
-        }
-
-        .btn-primary-custom {
-            color: #FFFFFF;
-            background-color: #C8242F;
-        }
-
-        .btn-secondary-custom {
-            color: #C8242F;
-            border: 1px solid #C8242F;
-            background-color: white;
-        }
-
-        .tabs-custom
-        {
-            font-size: 15px;
-            font-weight: 400;
-            color: #ADADAD;
-            cursor: pointer;
-            border-bottom: 1px solid #ADADAD;
-        }
-    
-        /* .tabs-custom .nav-item .active */
-        .custom-active
-        {
-            border-bottom: 3px solid #C8242F;
-            color: #C8242F !important;
-            font-weight: 500;
-        }
-        .tab-text
-        {
-            text-align: start;
-            font-size: 15px;
-            font-weight: 400;
-            color: #3E3E3E;
-        }
-        /* .tabs-custom>div>a:active
-        {
-            color: #C8242F !important;    
-        } */
-        @media screen and (max-width: 992px) {
-            .main-content {
-                z-index: -1;
-                position: absolute;
-            }
-
-            aside {
-                position: absolute;
-                z-index: 100;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Innerpage | Assignment</title>
 </head>
 
 <body>
@@ -232,7 +16,7 @@
         <div class="container-fluid">
             <div class="navbar-brand">
                 <img src="./images/menu-bar.svg" id="menu-bar">
-                <a href="#"><img src="./images/header-logo.svg" class="ms-3" alt=""></a>
+                <a href="#"><img src="./images/header-logo.svg" class="ms-3" alt="Header logo"></a>
             </div>
             <div class="navar-nav me-auto ms-md-5 d-none d-md-block">
                 <div class="d-flex align-items-center">
@@ -248,54 +32,54 @@
 
                 <span class="ms-1">John Doe</span>
 
-                <img src="./images/downward-arrow.svg" class="ms-1" alt="">
+                <img src="./images/downward-arrow.svg" class="ms-1" alt="Select Arrow">
             </div>
 
             <div class="d-sm-none">
                 <img src="./images/profile.png" alt="Profile picture" class="d-sm-none">
-                <img src="./images/downward-arrow.svg" class="ms-1" alt="">
+                <img src="./images/downward-arrow.svg" class="ms-1" alt="Select Arrow">
             </div>
         </div>
     </nav>
 
     <main class="d-flex">
-        <aside>
+        <aside class = "flex-shrink-0">
             <div class="d-flex flex-column gap-2 align-items-center bg-white">
                 <div class="d-flex align-items-center gap-2 ps-4 menu-item">
-                    <img class="menu-icon" src="./images/dashboard-active.svg" alt="">
+                    <img class="menu-icon" src="./images/dashboard-default.svg" alt="Default Dashboard">
                     <span class="menu-text">Dashboard</span>
                 </div>
                 <div class="d-flex align-items-center gap-2 ps-4 menu-item-active">
-                    <img class="menu-icon" src="./images/graph-default.svg" alt="">
+                    <img class="menu-icon" src="./images/graph-active.svg" alt="Active Analysis">
                     <span class="menu-text">Analysis</span>
                 </div>
 
                 <div class="d-flex align-items-center gap-2 ps-4 menu-item">
-                    <img class="menu-icon" src="./images/inbox-default.svg" alt="">
+                    <img class="menu-icon" src="./images/inbox-default.svg" alt="Default Inbox">
                     <span class="menu-text">Inbox</span>
                 </div>
 
 
                 <div class="d-flex align-items-center gap-2 ps-4 menu-item">
-                    <img class="menu-icon" src="./images/clock-default.svg" alt="">
+                    <img class="menu-icon" src="./images/clock-default.svg" alt="Default Clock">
                     <span class="menu-text">History</span>
                 </div>
 
 
                 <div class="d-flex align-items-center gap-2 ps-4 menu-item">
-                    <img class="menu-icon" src="./images/user-default.svg" alt="">
+                    <img class="menu-icon" src="./images/user-default.svg" alt="Default User">
                     <span class="menu-text">Users</span>
                 </div>
 
 
                 <div class="d-flex align-items-center gap-2 ps-4 menu-item">
-                    <img class="menu-icon" src="./images/maintenance-default.svg" alt="">
+                    <img class="menu-icon" src="./images/maintenance-default.svg" alt="Default Maintenance">
                     <span class="menu-text">Maintenance</span>
                 </div>
 
 
                 <div class="d-flex align-items-center gap-2 ps-4 menu-item">
-                    <img class="menu-icon" src="./images/setting-default.svg" alt="">
+                    <img class="menu-icon" src="./images/setting-default.svg" alt="Default Setting">
                     <span class="menu-text">Setting</span>
                 </div>
 
@@ -326,9 +110,12 @@
                         <div class="col">
                             <input type="text" id="name" class="form-control" placeholder="Name">
                         </div>
-                        <div class="col">
-                            <input type="text" id="username" value="johndoe" class="form-control">
-                        </div>
+                        <article class="col">
+                            <div class="floating">
+                                <input type="text" value="johndoe" required="required">
+                                <span>Username</span>
+                            </div>
+                        </article>
                     </div>
 
                     <div class="row">
@@ -351,15 +138,24 @@
                 </h3>
                 <form action="">
                     <div class="row">
-                        <div class="col">
-                            <input type="text" placeholder="Focus" class="form-control is-invalid" autofocus>
-                        </div>
-                        <div class="col">
-                            <input type="Password" value="hellothere" class="form-control">
-                        </div>
-                        <div class="col">
-                            <input type="text" value="johndoe" class="form-control border-dash bg-transparent" disabled>
-                        </div>
+                        <article class="col">
+                            <div class="floating">
+                                <input type="text" autofocus value="" class = "border-danger" required="required">
+                                <span>Focus</span>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="floating">
+                                <input type="password" value="hellothere" required="required">
+                                <span>Password</span>
+                            </div>
+                        </article>
+                        <article class="col">
+                            <div class="floating">
+                                <input type="text" value="johndoe" class = "border-dash">
+                                <span>Disabled</span>
+                            </div>
+                        </article>
                     </div>
                 </form>
             </div>
@@ -372,10 +168,15 @@
 
                 <div class="row d-flex gap-4 gap-md-0">
                     <div class="col-md-3 col-12">
-                        <input type="text" id="designation" value="UI Designer" class="form-control is-invalid px-3">
-                        <div class="invalid-feedback ms-lg-3 ms-0">
+                        <article class="col">
+                            <div class="floating">
+                                <input type="text" value="UI Designer" class = "border-danger is-invalid" required="required">
+                                <span class = "text-danger">Designation</span>
+                            </div>
+                        </article>
+                        <div class="ms-lg-3 ms-0">
                             <label for="designation" class = "invalid-text">Enter valid data</label>
-                        </div>
+                        </div>  
                     </div>
                     <div class="col-md-3 col-12">
                         <input type="text" id="name" placeholder="Name" class="form-control px-3">
@@ -384,7 +185,12 @@
                         </small>
                     </div>
                     <div class="col-md-3 col-12">
-                        <input type="text" id="username" value="johndoe" class="form-control">
+                        <article class="col">
+                            <div class="floating">
+                                <input type="text" value="johndoe" required="required">
+                                <span>Username</span>
+                            </div>
+                        </article>
                     </div>
                     <div class="col-md-3 col-12">
                         <select name="dropdown" id="dropdown" class="form-select">
@@ -593,16 +399,3 @@
 </body>
 
 </html>
-
-
-<!-- <div class="nav nav-tabs tabs-custom">
-    <div class="nav-item" id = "tab-1">
-        <span class="nav-link" style = "color: #C8242F;">Tab 1</span>
-    </div>
-    <div class="nav-item ms-2" id = "tab-2">
-        <span class="nav-link">Tab 2</span>
-    </div>
-    <div class="nav-item ms-2" id = "tab-3">
-        <span class="nav-link">Tab 3</span>
-    </div>
-</div> -->

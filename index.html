@@ -1,64 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
-    <title>Login | Assignment</title>
+    <title>Login Page | Assignment</title>
 </head>
-
-<body class="bg-light">
-    <section class="d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 hero-image-container">
-                    <img src="./images/hero-image.png" alt="Hero Image" class="hero-image my-4 mb-0">
-                </div>
-                <div class="container-fluid col-md-6 d-flex flex-column">
-                    <div>
-                        <img src="./images/header-logo.svg" class="logo-header" alt="Company Logo">
-                    </div>
-                    <div>
-                        <p class="lead-text text-start mt-2">
-                            We are <span class="mark-text">experts</span> in business, marketing, growth, & sales.
-                        </p>
-
-                        <span class="action-message">
-                            Login into your account
-                        </span>
-
-                        <form>
-                            <input type="text"  id = "username"
-                            class="form-control mt-3 custom-input"  
-                            placeholder="Username">
-                            <input type="password" id = "password" 
-                            class="form-control mt-4 custom-input" placeholder="Password">
-
-                            <div class="login-option d-flex justify-content-between align-items-center">
-                                <button class = "btn-login">Login</button>
-                                <span class = "que-action"> Forgot Password?</span>
-                            </div>
-
-                            <p class = "d-inline-block mt-4 float que-action"> 
-                                Are you a new member?
-                            </p>
-                        
-                            <a href="#" class = "action-register">
-                                Register here
-                            </a>
-                        </form>
-                    </div>
-                </div>
-            </div>
+<body class = "custom-background">
+    <div class = "container d-flex flex-column gap-4 align-items-center flex-md-row main-container gap-md-5">
+        <div>
+            <img src="./images/hero-image.png" class = "hero-image" alt="Hero Image">
         </div>
-    </section>
 
+        <div class = "form-container">
+            <img src="./images/header-logo.svg" alt="Header Logo" class = "header-logo">
+            <p class = "sub-header pt-3">We are <span class = "mark-text">experts</span> in business, marketing, growth, & sales.</p>
+
+            <span class="action-message">
+                Login into your account
+            </span>
+
+            <form>
+                <input type="text"  id = "username"
+                class="form-control mt-3 p-2 custom-input"  
+                placeholder="Username">
+                <input type="password" id = "password" 
+                class="form-control mt-4 p-2 custom-input" placeholder="Password">
+
+                <div class="login-option d-flex justify-content-between align-items-center">
+                    <button class = "btn-login">Login</button>
+                    <span class = "que-action"> Forgot Password?</span>
+                </div>
+
+                <p class = "d-inline-block mt-4 float que-action"> 
+                    Are you a new member?
+                </p>
+            
+                <a href="#" class = "action-register">
+                    Register here
+                </a>
+            </form>
+        </div>
+    </div>
 </body>
-
 </html>
